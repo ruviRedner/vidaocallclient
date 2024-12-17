@@ -11,6 +11,8 @@ const App: React.FC = () => {
     const partnerVideo = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
+        console.log(stream);
+        
         // התחברות לשרת
         socket.current = io("https://vidaocall.onrender.com");
 
